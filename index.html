@@ -2,131 +2,634 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="O profissional que você estava procurando para seu projeto!">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Guilherme Costa Silva - Estudante de Análise e Desenvolvimento de Sistemas</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--============= Unicons css ===================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!--============= bootstrap icons ===================-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!--============= Swiper ===================-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/logo.svg">
+  <link rel="shortcut icon" href="assets/imagens/shortcut-icon.webp">
+  <title>Guilherme Costa</title>
 </head>
 
 <body>
-    <header>
 
-        <p class="contrateoguilherme">Contrate o <em>Guilherme</em></p>
-        <nav>
-            <a href="#sobremim">Sobre</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contato">Contato</a>
-        </nav>
+  <!--================== HEADER ========================-->
+  <header class="header" id="header">
+    <nav class="nav container">
 
-    </header>
-    <main class="conteudo">
-        <section class="conteudo-banner">
-            <div class="caixa-banner">
-                <p class="texto-banner">Olá! Meu nome é,</p>
-                <h1 class="nome-banner">
-                    <p>Guilherme</p><em>Costa Silva</em>
-                </h1>
-                <h2 class="subtitulo-banner">O cara certo para sua empresa!</h2>
-                <div class="botao1">
-                    <button class="botao-contratar">Contratar<br>Agora!</button>
-                </div>
-            </div>
-            <div></div>
-        </section>
-        <section class="sobremim" id="sobremim">
-            <div class="titulo-sections">
-                <h2 class="titulosections">Sobre <em>mim</em></h2>
-                <h3 class="subtitulosections">-quem eu sou-</h3>
-            </div>
-            <div class="texto-sobremim">
-                <h2 class="titulo-texto-sobremim">Estudante de <em>Análise e Desenvolvimento de Sistemas</em></h2>
-                <p class="paragrafo-sobremim">Graduando em Análise e desenvolvimento de sistemas. Carreira em
-                    desenvolvimento na área tecnologia da informação, com habilidade para atuar no auxílio ao
-                    desenvolvimento e implantação de sistemas informatizados, envolvendo o dimensionamento de requisitos
-                    e funcionalidade do sistema, prestação de suporte técnico ao cliente e aplicação de treinamento
-                    quando necessário. Apoio na codificação de aplicativos para a especificação de programas,
-                    arquitetura e ferramentas de desenvolvimento, auxiliando na administração do ambiente informatizado.
-                    Capacidade para a elaboração de documentação técnica, além de cooperar com o desenvolvimento de
-                    projetos e soluções para ambientes informatizados.</p>
-                <p class="paragrafo-sobremim">Experiência profissional como Jovem Aprendiz no Grupo NotreDame
-                    Intermédica com duração de 2 anos (de novembro de 2019 à novembro de 2021) no setor administrativo
-                    da empresa sendo responsável por toda parte de pós-atendimento dos pacientes.</p>
-                <button class="botao-curriculo">Baixar Currículo</button>
-            </div>
-        </section>
-        <section class="minhashabilidades" id="habilidades">
-            <div class="titulo-sections">
-                <br><br>
-                <h2 class="titulosections">Minhas <em>Habilidades</em></h2>
-                <h3 class="subtitulosections">o que posso fazer</h3>
-            </div>
-            <div class="habilidades">
-                <div class="desenvolvimento">
-                    <h2 class="titulo-habilidades">Desenvolvimento</h2>
-                    <p>Python</p>
-                    <p>Java</p>
-                    <p>Kotlin</p>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <br><br>
-                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:50">
-                    </div>
-                    <br>
-                </div>
-                <div class="cloud">
-                    <h2 class="titulo-habilidades">Cloud Computing</h2>
-                    <p>AWS</p>
-                    <br><br>
-                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:15">
-                    </div>
-                    <br>
-                </div>
-                <div class="bancodedados">
-                    <h2 class="titulo-habilidades">Banco de Dados</h2>
-                    <p>Microsoft SQL Server</p>
-                    <br><br>
-                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:40">
-                    </div>
-                    <br>
-                </div>
-                <div class="outrasferramentas">
-                    <h2 class="titulo-habilidades">Outras ferramentas</h2>
-                    <p>Paccote Office</p>
-                    <p>GitHub</p>
-                    <p>Git</p>
-                    <br><br>
-                    <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:30">
-                    </div>
-                    <br>
-                </div>
-            </div>
+      <a href="#" class="nav_logo"><span class="logo_cor">{</span>Guilherme<span class="logo_cor">}</span></a>
 
-        </section>
-        <section>
-            <div class="formularioctt" id="contato">
-                <h2>Quer falar comigo?</h2>
-                <h3>Só mandar um WhatsApp ou preenhcer o forumário abaixo!</h3>
-                <form class="formulario" action="index.html" method="post">
-                    <input type="text" class="insira-nome" placeholder="Nome e sobrenome">
-                    <input type="email" class="insira-nome" placeholder="Melhor e-mail">
-                    <input type="tel" class="insira-nome" placeholder="Telefone de contato">
-                    <textarea class="insira-nome" placeholder="Deixe sua mensagem"></textarea>
-                    <button class="mensagem-form">Entrar em contato</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <h2>Contatos</h2>
-            <p>(11) 93290-5813</p>
-            <p>silva.guilhermecst@gmail.com</p>
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list grid">
+
+          <li class="nav_item">
+            <a href="#home" class="nav_link active-link"> Home </a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#about" class="nav_link">Sobre</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#skills" class="nav_link">Skills</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#portfolio" class="nav_link">Projetos</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#contact" class="nav_link">Contato</a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav_close" id="nav-close"></i>
+      </div>
+
+      <div class="nav_btns">
+        <!-- Theme change button -->
+        <i class="uil uil-moon change-theme uil-sun" id="theme-button"></i>
+
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="uil uil-bars"></i>
         </div>
-    </footer>
+      </div>
+    </nav>
+  </header>
 
+  <!--================== MAIN ========================-->
+  <main class="main">
 
+    <!--================== HOME ========================-->
+    <section class="home section home_section" id="home">
+      <div class="home_container container grid">
+        <div class="home_content grid">
+
+          <div class="home_social">
+            <a href="https://www.linkedin.com/in/silva-guilherme-costa" target="_blank"
+              class="home_social-icon delaySmallReveal">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+5511932905813&text=Olá Guilherme! te achei através de seu portfólio."
+              target="_blank" class="home_social-icon delayMediumReveal">
+              <i class="uil uil-whatsapp"></i>
+            </a>
+            <a href="https://github.com/Guilhermecst" target="_blank" class="home_social-icon delayLargeReveal">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+
+          <div class="home_effect-wrap">
+            <div class="effect effect-1"></div>
+            <div class="effect effect-3">
+            </div>
+          </div>
+
+          <div class="home_data">
+            <h1 class="home_title">Olá, eu sou <br> Guilherme Costa<span class="score">.</span></h1>
+            <h3 class="home_subtitle home_animation">Estudante de Análise e Desenvolvimento de Sistemas<h3>
+
+                <a href="#portfolio" class="button_main">
+                  <b>Conheça meu portfólio</b> <i class="uil uil-message button_icon"></i>
+                </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="home_desktop">
+      <div class="home_people">
+        <img class="developer-img" src="assets/imagens/developer.png" alt="pessoa no computador">
+      </div>
+    </div>
+    </div>
+
+    <!--================== ABOUT ========================-->
+    <section class="about section" id="about">
+      <h2 class="section_title">Sobre</h2>
+
+      <div class="about_container container grid">
+
+        <div class="about_data">
+          <p class="about_description"> Graduando em Análise e desenvolvimento de sistemas.
+            Carreira em desenvolvimento na área tecnologia da informação,
+            com habilidade para atuar no auxílio ao desenvolvimento e implantação
+            de sistemas informatizados, envolvendo o dimensionamento de requisitos e
+            funcionalidade do sistema, prestação de suporte técnico ao cliente e aplicação
+            de treinamento quando necessário. Apoio na codificação de aplicativos para a
+            especificação de programas, arquitetura e ferramentas de desenvolvimento,
+            auxiliando na administração do ambiente informatizado. Capacidade para a
+            elaboração de documentação técnica, além de cooperar com o desenvolvimento de
+            projetos e soluções para ambientes informatizados.<i class="uil uil-rocket card_icon pont"></i>
+          </p>
+
+          <div class="about_buttons">
+            <a download="" href="assets/pdf/Guilherme Costa Silva.pdf" class="button_main" target="_blank"> <b> Download
+                CV</b><i class="uil uil-import button_icon"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--================== SKILLS ========================-->
+    <section class="skills section" id="skills">
+
+      <h2 class="section_title delaySmallReveal">Skills</h2>
+
+      <div class="skills_container container grid">
+
+        <!-- ============== Python ===================== -->
+
+        <div class="skills_card delayLargeReveal card">
+          <span class="python card-border"></span>
+          <div class="circle circle1">
+            <img class="skills_img" src="assets/imagens/icones/python.png" alt="python">
+          </div>
+          <h3 class="card_title">Python</h3>
+
+          <h4 class="card_subtitle">Nível Básico </h4>
+
+        </div>
+
+        <!-- ============== Java ===================== -->
+
+        <div class="skills_card delayMediumReveal card">
+          <span class="java card-border"></span>
+          <div class="circle circle2">
+            <img class="skills_img" src="assets/imagens/icones/java.png" alt="java">
+          </div>
+          <h3 class="card_title">Java</h3>
+
+          <h4 class="card_subtitle">Nível Básico</h4>
+
+        </div>
+
+        <!-- ============== Kotlin ===================== -->
+
+        <div class="skills_card delaySmallReveal card">
+          <span class="kotlin card-border"></span>
+          <div class="circle circle3">
+            <img class="skills_img" src="assets/imagens/icones/kotlin.png" alt="kotlin">
+          </div>
+          <h3 class="card_title">Kotlin</h3>
+
+          <h4 class="card_subtitle">Nível Básico</h4>
+
+        </div>
+
+        <!-- ============== HTML ===================== -->
+
+        <div class="skills_card delayLargeReveal" id="card">
+          <span class="html card-border"></span>
+          <div class="circle circle4">
+            <img class="skills_img" src="assets/imagens/icones/html.png" alt="html">
+          </div>
+          <h3 class="card_title">HTML</h3>
+
+          <h4 class="card_subtitle">Nível Básico </h4>
+
+        </div>
+
+        <!-- ============== CSS ===================== -->
+
+        <div class="skills_card delayMediumReveal card">
+          <span class="css card-border"></span>
+          <div class="circle circle5">
+            <img class="skills_img" src="assets/imagens/icones/css.png" alt="css">
+          </div>
+          <h3 class="card_title">CSS</h3>
+
+          <h4 class="card_subtitle">Nível Básico </h4>
+
+        </div>
+
+        <!-- ============== SQL ===================== -->
+
+        <div class="skills_card delaySmallReveal">
+          <span class="sql card-border"></span>
+          <div class="circle circle6">
+            <img class="skills_img" src="assets/imagens/icones/sql.png" alt="sql">
+          </div>
+          <h3 class="card_title">Microsoft<br>SQL Server</h3>
+
+          <h4 class="card_subtitle">Nível Básico </h4>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--================== QUALIFICATION ========================-->
+    <section class="app-section qualification section">
+      <div class="qualification_container container">
+        <h2 class="section_title">Qualificações</h2>
+
+        <div class="tab-wrap">
+          <div class="tab ">
+            <button class="tab_button" onclick="openTab(event, 'Formacao')" id="Open">Graduação</button>
+            <button class="tab_button" onclick="openTab(event, 'Cursos')">Cursos</button>
+            <button class="tab_button" onclick="openTab(event, 'Experiência')">Experiência</button>
+          </div>
+
+          <div id="Formacao" class="tabcontent">
+            <div class="qualification_titles">
+              <h3 class="qualification_name">Análise e Desenvolvimento de Sistemas</h3>
+              <p class="qualification_description">Faculdade Impacta tecnologia</p>
+
+              <div class="status">
+                <span class="qualification_number"><span class="pont-green">60%</span></span>
+              </div>
+
+              <div class="qualification_calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2021 - 2023
+              </div>
+            </div>
+
+            <div class="qualification_bar">
+              <div class="qualification_percentage qualification_impacta">
+              </div>
+            </div>
+          </div>
+
+          <div id="Cursos" class="tabcontent ">
+            <div class="fund-java">
+              <div class="qualification_titles">
+                <h3 class="qualification_name">Fundamentos de Java</h3>
+                <p class="qualification_description">FIAP</p>
+
+                <div class="status">
+                  <span class="qualification_number"><span class="pont-purple">100%</span></span>
+                </div>
+
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2022
+                </div>
+              </div>
+
+              <div class="qualification_bar">
+                <span class="qualification_percentage qualification_fund_java"></span>
+              </div>
+            </div>
+
+            <div class="devops">
+              <div class="qualification_titles">
+                <h3 class="qualification_name">DevOps & Agile Culture</h3>
+                <p class="qualification_description">FIAP</p>
+
+                <div class="status">
+                  <span class="qualification_number"><span class="pont-red">100%</span></span>
+                </div>
+
+                <div class="qualification_calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2022
+                </div>
+              </div>
+
+              <div class="qualification_bar">
+                <span class="qualification_percentage qualification_devops"></span>
+              </div>
+
+              <div class="acf">
+                <div class="qualification_titles">
+                  <h3 class="qualification_name">Academy Cloud Foundations</h3>
+                  <p class="qualification_description">Amazon Web Services</p>
+
+                  <div class="status">
+                    <span class="qualification_number"> <span class="pont-green">100%</span></span>
+                  </div>
+
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022
+                  </div>
+                </div>
+
+                <div class="qualification_bar">
+                  <span class="qualification_percentage qualification_acf"></span>
+                </div>
+              </div>
+
+              <div class="cloud-adm">
+                <div class="qualification_titles">
+                  <h3 class="qualification_name">Cloud Fundamentals, Administration and Solution Architect</h3>
+                  <p class="qualification_description">FIAP</p>
+
+                  <div class="status">
+                    <span class="qualification_number"> <span class="pont-orange">33%</span></span>
+                  </div>
+
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022
+                  </div>
+                </div>
+
+                <div class="qualification_bar">
+                  <span class="qualification_percentage qualification_cloud_adm"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div id="Experiência" class="tabcontent">
+            <div class="qualification_titles">
+              <h3 class="qualification_name">Oportunidade</h3>
+              <p class="qualification_description">Buscando minha 1ª oportunidade no mercado de tecnologia.</p>
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+
+            <!--==================== PORTFOLIO ====================-->
+    <section class="portfolios section" id="portfolio">
+      <h2 class="section_title">Projetos</span></h2>
+  
+      <div class="portfolios_container container grid">
+        <!--==================== PORTFOLIO 1 ====================-->
+        <div class="portfolios_content">
+              <div>
+                <img class="portfolio_img" src="assets/imagens/developer.png" 
+                alt="Tribal Tattoo">  
+                <h3 class="portfolios_title"><i class="uil uil-pen portfolios_icon"></i>Portfólio</h3>
+              </div>
+
+              <span class=" portfolios_button">
+                Ver detalhes 
+                <i class="uil uil-arrow-right button_icon"></i>
+              </span>
+
+              <div class="portfolios_modal">
+                  <div class="portfolios_modal-content">
+                      <h4 class="portfolios_modal-title">Portfólio<i class="uil uil-layers button_icon pont"></i></h4>
+                      <i class="uil uil-times portfolios_modal-close"></i>
+
+                      <p>Inspirado no portfólio de Evander Inacio, esse projeto foi desenvolvido<br>com o propósito de apresentar um pouco sobre mim.</p> 
+                    
+                    <div class="portfolio_tech">
+                       <h3><i class="uil uil-check-circle portfolios_modal-icon"></i> Tecnologias:</h3>
+                       <article class="portfolio_tech-icon">
+                        <div class="button button--flex ">HTML</div> 
+                        <div class="button button--flex">CSS</div>
+                        <div class="button button--flex ">JAVASCRIPT</div></article>
+                      </div>
+
+                        <div class="portfolio_button">
+                          <a href="https://github.com/Guilhermecst/Portfolio" target="_blank" class="button button--flex button--white">
+                          <i class="uil uil-github-alt button_icon"></i> Github</a>
+
+                          <i class="uil uil-signout button_icon"></i></a>
+                        </div>
+                  </div>
+              </div>
+        </div>
+
+        <!--==================== PORTFOLIO 2 ====================-->
+
+        <div class="portfolios_content visibility">
+          <div>
+            <img class="portfolio_img" src="assets/imagens/project.png" alt="projeto">
+            <h3 class="portfolios_title"> <i class="uil uil-arrow portfolios_icon"></i> Em breve</h3>
+          </div>
+
+          <span class="portfolios_button">
+            Aguarde <i class="uil uil-coffee button_icon"></i>
+          </span>
+
+          <div class="portfolios_modal">
+            <div class="portfolios_modal-content">
+              <h4 class="portfolios_modal-title"> Aguarde <i class="uil uil-coffee pont"></i></h4>
+              <i class="uil uil-times portfolios_modal-close"></i>
+
+              <p> <i class="uil uil-check-circle portfolios_modal-icon"></i>
+                Pegue o café e espere um pouco, estou trabalhando em algo.
+              </p> <br>
+
+              <ul class="portfolios_modal-portfolios grid">
+                <li class="portfolios_modal-portfolio">
+
+                  <div class="portfolio_button">
+                    <a href="https://github.com/Guilhermecst" target="_blank"
+                      class="button button--flex button--small button--link button--white"><i
+                        class="uil uil-github-alt button_icon"></i> Github</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--================== CERTIFICATES ========================-->
+    <section class="certificate action section">
+      <h2 class="section_title delaySmallReveal">Certificados</span></h2>
+
+      <div class="certificate_container container swiper mySwiper delayLargeReveal">
+        <div class="swiper-wrapper">
+
+          <!--======== CERTIFICATES 1 ========-->
+          <div class="certificate_content grid swiper-slide">
+            <img src="assets/imagens/certificados/FIAP - Fundamentos Java.png" alt="Certificado"
+              class="certificate_img">
+
+            <div class="certificate_data">
+              <h3 class="certificate_title">Fundamentos de Java</h3>
+              <p class="certificate_description"> Certificado obtido no curso online da FIAP</p>
+              </a>
+            </div>
+          </div>
+
+          <!--======== CERTIFICATES 2 ========-->
+          <div class="certificate_content grid swiper-slide">
+            <img src="assets/imagens/certificados/FIAP - DevOps & Agile Culture.png" alt="Certificado"
+              class="certificate_img">
+
+            <div class="certificate_data">
+              <h3 class="certificate_title">DevOps & Agile Culture</h3>
+              <p class="certificate_description">Certificado obtido no curso online da FIAP </p>
+              </a>
+            </div>
+          </div>
+
+          <!--======== CERTIFICATES 3 ========-->
+          <div class="certificate_content grid swiper-slide">
+            <img src="assets/imagens/certificados/AWS - Academy Cloud Foundations.jpg" alt="Certificado"
+              class="certificate_img">
+
+            <div class="certificate_data">
+              <h3 class="certificate_title">Academy Cloud Foundations</h3>
+              <p class="certificate_description"> Certificado obtido no curso online da AWS</p>
+            </div>
+          </div>
+
+          <!--======== CERTIFICATES 4 ========-->
+          <div class="certificate_content grid swiper-slide">
+            <img src="assets/imagens/certificados/WiseUp - Inglês.jpg" alt="Certificado" class="certificate_img">
+
+            <div class="certificate_data">
+              <h3 class="certificate_title">Inglês</h3>
+              <p class="certificate_description"> Certificado obtido no curso online da WiseUp Online</p>
+            </div>
+          </div>
+
+          <!--======== CERTIFICATES 5 ========-->
+          <div class="certificate_content grid swiper-slide">
+            <img src="assets/imagens/certificados/certification-img.png" alt="astronauta" class="certificate_img">
+
+            <div class="certificate_data">
+              <h3 class="certificate_title">Aguarde</h3>
+              <p class="certificate_description"> Estou sempre buscando novas certificações.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-certificate-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-certificate-icon"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--================== CONTACT ========================-->
+    <section class="contact section" id="contact">
+      <h2 class="section_title">Contato</span></h2>
+
+      <div class="contact_container container grid">
+        <div class="div_contact">
+
+          <div class="contact_information">
+            <i class="uil uil-whatsapp contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Whatsapp</h3>
+              <span class="contact_subtitle"><a
+                  href="https://api.whatsapp.com/send?phone=+5511932905813&text=Olá Guilherme! te achei através de seu portfólio."
+                  target="_blank">(11) 93290-5813</a></span>
+            </div>
+          </div>
+
+          <div class="contact_information">
+            <i class="bi bi-at contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Mande um E-Mail</h3>
+              <span class="contact_subtitle"> <a
+                  href="mailto:silva.guilhermecst@gmail.com">silva.guilhermecst@gmail.com</a> </span>
+            </div>
+          </div>
+
+          <div class="contact_information">
+            <i class="bi bi-geo-alt contact_icon"></i>
+            <div>
+              <h3 class="contact_title">Localização</h3>
+              <span class="contact_subtitle"> Osasco - SP</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="https://formsubmit.co/silva.guilhermecst@gmail.com" method="POST" class="contact_form grid">
+
+          <div class="contact_inputs grid">
+
+            <div class="contact_content">
+              <label for="nome" class="contact_label"><i class="uil uil-user"></i> Nome completo </label>
+              <input id="nome" type="text" name="name" required class="contact_input">
+            </div>
+
+            <div class="contact_content">
+              <label for="email" class="contact_label"> <i class="uil uil-envelope"></i> Seu Email </label>
+              <input id="email" type="email" name="email" required class="contact_input">
+            </div>
+          </div>
+
+          <div class="contact_content">
+            <label for="mensagem" class="contact_label"><i class="uil uil-comment-lines"></i> Sua mensagem </label>
+            <textarea name="mensagem" id="mensagem" required cols="0" rows="7" class="contact_input"></textarea>
+          </div>
+
+          <div>
+
+            <button type="submit" class="button_main button_envio">
+              <b>Enviar mensagem</b>
+              <i class="bi bi-envelope-check button_icon"></i>
+            </button>
+
+          </div>
+        </form>
+
+        <div class="contact_socials">
+          <h2 class="section_title delaySmallReveal">Redes Sociais</span></h2>
+
+          <ul class="contact_social">
+
+            <li>
+              <a href="https://www.linkedin.com/in/silva-guilherme-costa/" target='_blank'
+                class="button button--small button--white delaySmallReveal">
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/Guilhermecst" target="_blank"
+                class="button button--small button--white delayMediumReveal">
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=+5511932905813&text=Olá Guilherme! te achei através de seu portfólio."
+                target='_blank' class="button button--small button--white delayLargeReveal">
+                <i class="uil uil-whatsapp"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="footer_divider"></div>
+  <!--================== FOOTER ========================-->
+  <footer class="footer">
+    <p class="footer_copy">&#169; 2022 Guilherme Costa <i class="uil uil-coffee pont"></i></p>
+  </footer>
+
+  <!--================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scroll_icon"></i>
+  </a>
+
+  <!--============= Swipper js ===================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--============= Scroll Reveal ===================-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--============= Main js ===================-->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
