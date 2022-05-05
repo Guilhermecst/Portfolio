@@ -14,9 +14,9 @@
   --first-color-alt: hsl(var(--hue-color), 50%, 50%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 100%);
-   --title-color-gradient: linear-gradient(to left, #03001e, #9307f1,
-   #7109e7 , #1100ff );
-   --subtitle-section-gradient: linear-gradient(to left, #ffffff, #00ffdd, #fa0404);
+  --title-color-gradient: linear-gradient(to left, #03001e, #9307f1,
+      #7109e7, #1100ff);
+  --subtitle-section-gradient: linear-gradient(to left, #ffffff, #00ffdd, #fa0404);
   --text-color: hsl(var(--hue-color), 8%, 85%);
   --text-color-lighter: hsl(var(--hue-color), 20%, 70%);
   --text-color-button: hsl(var(--hue-color), 0%, 0%);
@@ -28,7 +28,7 @@
   --qualification-color: hsl(var(--hue-color), 100%, 50%);
   --scroll-thumb-color: hsl(var(--hue-color), 68%, 50%);
   --scroll-bar-color: hsl(var(--hue-color), 10%, 15%);
-  
+
 
   /*====== Font alt  ======*/
   --body-font: 'Poppins', sans-serif;
@@ -97,7 +97,7 @@ h1 {
   background-image: var(--title-color-gradient);
   font-weight: var(--font-semi-bold);
   background-clip: text;
-  -webkit-background-clip: text; 
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--title-color);
 }
@@ -133,7 +133,7 @@ img {
   background-image: var(--subtitle-section-gradient);
   font-weight: var(--font-semi-bold);
   background-clip: text;
-  -webkit-background-clip: text; 
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--title-color);
   margin-bottom: var(--mb-3);
@@ -184,8 +184,8 @@ body.sun-theme {
   --first-color-lighter: hsl(var(--hue-color), 2%, 5%);
   --title-color: hsl(var(--hue-color), 0%, 0%);
   --title-color-gradient: linear-gradient(to left, #03001e, #9307f1,
-   #7109e7 , #1100ff );
-   --subtitle-section-gradient: linear-gradient(to left, #fb06c2, #7300ff, #04fa7f);
+      #7109e7, #1100ff);
+  --subtitle-section-gradient: linear-gradient(to left, #fb06c2, #7300ff, #04fa7f);
   --text-color: hsl(var(--hue-color), 2%, 1%);
   --text-color-alt: hsl(var(--hue-color), 90%, 50%);
   --input-color: hsl(var(--hue-color), 65%, 90%);
@@ -195,7 +195,7 @@ body.sun-theme {
   --qualification-bar-color: hsl(var(--hue-color), 2%, 70%);
   --qualification-color: hsl(var(--hue-color), 100%, 42%);
   --scroll-bar-color: hsl(var(--hue-color), 98%, 87%);
- 
+
 }
 
 /*============== LIGHT BUTTON ===============*/
@@ -359,6 +359,7 @@ body.sun-theme {
 }
 
 @keyframes top {
+
   0%,
   100% {
     transform: translateY(0px);
@@ -410,14 +411,17 @@ body.sun-theme {
   from {
     border-right-color: var(--text-color);
   }
+
   to {
     border-right-color: transparent;
   }
 }
+
 @keyframes line {
   from {
     width: 0;
   }
+
   to {
     width: 13.7em;
   }
@@ -512,8 +516,10 @@ body.sun-theme {
 
 /*=============== SKILLS =========================*/
 .skills_container {
-  justify-content: center;
-  align-items: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .skills_cursor {
@@ -526,8 +532,8 @@ body.sun-theme {
 
 .skills_card {
   position: relative;
-  width: 3rem;
-  height: 7rem;
+  width: 47%;
+  height: 9rem;
   margin: var(--mb-0-5);
   border-radius: 25px;
   background-color: var(--container-color);
@@ -971,7 +977,7 @@ body.sun-theme {
   margin-bottom: var(--mb-1-5);
 }
 
-.portfolio_tech h3{
+.portfolio_tech h3 {
   margin-bottom: var(--mb-0-25);
 }
 
@@ -981,10 +987,10 @@ body.sun-theme {
   border: 0 solid;
   border-radius: 5px;
   padding: 6px 1rem;
-  margin: 5px 3px;  
+  margin: 5px 3px;
 }
 
-.portfolio_tech-icon a:hover{
+.portfolio_tech-icon a:hover {
   background: var(--first-color);
 }
 
@@ -1004,10 +1010,10 @@ body.sun-theme {
   text-align: center;
 }
 
-.github_title{
+.github_title {
   background-image: var(--title-color-gradient);
   background-clip: text;
-  -webkit-background-clip: text; 
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--text-color);
 }
@@ -1212,11 +1218,9 @@ body.sun-theme {
 /*=============== FOOTER =========================*/
 .footer_divider {
   height: 3.2px;
-  background: linear-gradient(
-    270deg,
-    hsla(var(--hue-color), 95%, 85%, 1.8),
-    hsla(var(--hue-color), 100%, 45%, 2.55)
-  );
+  background: linear-gradient(270deg,
+      hsla(var(--hue-color), 95%, 85%, 1.8),
+      hsla(var(--hue-color), 100%, 45%, 2.55));
 }
 
 .footer_copy {
@@ -1292,7 +1296,7 @@ body.sun-theme {
     height: 100vh;
   }
 
-  .contact_social{
+  .contact_social {
     display: grid;
     grid-template-columns: repeat(3, .2fr);
   }
@@ -1351,7 +1355,7 @@ body.sun-theme {
     gap: 1rem;
     justify-content: center;
   }
-  
+
 }
 
 @media (min-width: 768px) {
@@ -1369,7 +1373,7 @@ body.sun-theme {
   }
 
   .header,
-  .main{
+  .main {
     padding: 0 1rem;
   }
 
@@ -1471,6 +1475,7 @@ body.sun-theme {
 }
 
 @media (min-width: 994px) {
+
   .header,
   .main {
     margin: 0;
@@ -1578,6 +1583,7 @@ body.sun-theme {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -webkit-transform: translate3d(10px, -40px, 0);
       transform: translate3d(10px, -40px, 0);
@@ -1589,6 +1595,7 @@ body.sun-theme {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -webkit-transform: translate3d(20px, -50px, 0);
       transform: translate3d(20px, -50px, 0);
@@ -1632,7 +1639,7 @@ body.sun-theme {
   .certificate_container .swiper-pagination-bullet-active {
     bottom: -4.5rem;
   }
- 
+
 }
 
 @media (min-width: 1200px) {
