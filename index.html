@@ -96,8 +96,8 @@
           </div>
 
           <div class="home_data">
-            <h1 class="home_title">Olá, eu sou <br> Guilherme Costa<span class="score">.</span></h1>
-            <h3 class="home_subtitle home_animation">Estudante de Análise e Desenvolvimento de Sistemas<h3>
+            <h1 class="home_title">Olá, eu sou <br> Guilherme Costa<span class="score">.</span></h1><br>
+            <h3 class="home_subtitle home_animation">Estudante de Análise e Desenvolvimento de Sistemas<h3><br><br>
 
                 <a href="#portfolio" class="button_main">
                   <b>Conheça meu portfólio</b> <i class="uil uil-message button_icon"></i>
@@ -359,50 +359,98 @@
 
     </section>
 
-            <!--==================== PORTFOLIO ====================-->
+    <!--==================== PORTFOLIO ====================-->
     <section class="portfolios section" id="portfolio">
       <h2 class="section_title">Projetos</span></h2>
-  
+
       <div class="portfolios_container container grid">
         <!--==================== PORTFOLIO 1 ====================-->
         <div class="portfolios_content">
-              <div>
-                <img class="portfolio_img" src="assets/imagens/developer.png" 
-                alt="Tribal Tattoo">  
-                <h3 class="portfolios_title"><i class="uil uil-pen portfolios_icon"></i>Portfólio</h3>
+          <div>
+            <img class="portfolio_img" src="assets/imagens/developer.png" alt="portfolio">
+            <h3 class="portfolios_title"><i class="uil uil-pen portfolios_icon"></i>Portfólio</h3>
+          </div>
+
+          <span class=" portfolios_button">
+            Ver detalhes
+            <i class="uil uil-arrow-right button_icon"></i>
+          </span>
+
+          <div class="portfolios_modal">
+            <div class="portfolios_modal-content">
+              <h4 class="portfolios_modal-title">Portfólio<i class="uil uil-layers button_icon pont"></i></h4>
+              <i class="uil uil-times portfolios_modal-close"></i>
+
+              <p>Inspirado no portfólio de Evander Inacio, esse projeto foi desenvolvido<br>com o propósito de
+                apresentar um pouco sobre mim.</p>
+
+              <div class="portfolio_tech">
+                <h3><i class="uil uil-check-circle portfolios_modal-icon"></i> Tecnologias:</h3>
+                <article class="portfolio_tech-icon">
+                  <div class="button button--flex ">HTML</div>
+                  <div class="button button--flex">CSS</div>
+                  <div class="button button--flex ">JAVASCRIPT</div>
+                </article>
               </div>
 
-              <span class=" portfolios_button">
-                Ver detalhes 
-                <i class="uil uil-arrow-right button_icon"></i>
-              </span>
+              <div class="portfolio_button">
+                <a href="https://github.com/Guilhermecst/Portfolio" target="_blank"
+                  class="button button--flex button--white">
+                  <i class="uil uil-github-alt button_icon"></i> Github</a>
 
-              <div class="portfolios_modal">
-                  <div class="portfolios_modal-content">
-                      <h4 class="portfolios_modal-title">Portfólio<i class="uil uil-layers button_icon pont"></i></h4>
-                      <i class="uil uil-times portfolios_modal-close"></i>
-
-                      <p>Inspirado no portfólio de Evander Inacio, esse projeto foi desenvolvido<br>com o propósito de apresentar um pouco sobre mim.</p> 
-                    
-                    <div class="portfolio_tech">
-                       <h3><i class="uil uil-check-circle portfolios_modal-icon"></i> Tecnologias:</h3>
-                       <article class="portfolio_tech-icon">
-                        <div class="button button--flex ">HTML</div> 
-                        <div class="button button--flex">CSS</div>
-                        <div class="button button--flex ">JAVASCRIPT</div></article>
-                      </div>
-
-                        <div class="portfolio_button">
-                          <a href="https://github.com/Guilhermecst/Portfolio" target="_blank" class="button button--flex button--white">
-                          <i class="uil uil-github-alt button_icon"></i> Github</a>
-
-                          <i class="uil uil-signout button_icon"></i></a>
-                        </div>
-                  </div>
+                <i class="uil uil-signout button_icon"></i></a>
               </div>
+            </div>
+          </div>
         </div>
 
         <!--==================== PORTFOLIO 2 ====================-->
+
+        <div class="portfolios_content">
+          <div>
+            <img class="portfolio_img" src="assets/imagens/logo.png" alt="knock">
+            <h3 class="portfolios_title"><i class="uil uil-pen portfolios_icon"></i>Knock</h3>
+          </div>
+
+          <span class=" portfolios_button">
+            Ver detalhes
+            <i class="uil uil-arrow-right button_icon"></i>
+          </span>
+
+          <div class="portfolios_modal">
+            <div class="portfolios_modal-content">
+              <h4 class="portfolios_modal-title">Portfólio<i class="uil uil-layers button_icon pont"></i></h4>
+              <i class="uil uil-times portfolios_modal-close"></i>
+
+              <p>A Knock é um projeto que simula uma plataforma de leilão, seu back-end está integrado na nuvem na AWS,
+                e toda vez que é realizado um cadastro de usuário, produto e até um lance, é executado uma função Lambda
+                integrada no API Gateway escrita em Python que alimenta o banco de dados não relacional DynamoDB com os
+                dados fornecidos pelo usuário. O site está hospedado em um bucket S3 também na AWS.
+
+                URL: http://knock-login.s3-website-us-east-1.amazonaws.com/</p>
+
+              <div class="portfolio_tech">
+                <h3><i class="uil uil-check-circle portfolios_modal-icon"></i> Tecnologias:</h3>
+                <article class="portfolio_tech-icon">
+                  <div class="button button--flex ">HTML</div>
+                  <div class="button button--flex">CSS</div>
+                  <div class="button button--flex ">JAVASCRIPT</div>
+                  <div class="button button--flex">AWS</div>
+                </article>
+              </div>
+
+              <div class="portfolio_button">
+                <a href="https://github.com/Guilhermecst/Knock-Leilao" target="_blank"
+                  class="button button--flex button--white">
+                  <i class="uil uil-github-alt button_icon"></i>Github</a>
+
+                <i class="uil uil-signout button_icon"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--==================== PORTFOLIO 3 ====================-->
 
         <div class="portfolios_content visibility">
           <div>
